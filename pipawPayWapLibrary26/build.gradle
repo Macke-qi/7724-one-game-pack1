@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 22
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+
+}
+
+
+dependencies {
+    compile files('libs/ipaynow_v1.3.0.jar')
+    compile files('libs/jg_filter_sdk_1.1.jar')
+    compile files('libs/mid_sdk_2.10.jar')
+//    compile files('libs/pipawpaywap_2.6.jar')
+    compile files('libs/UPPayAssistEx.jar')
+    compile files('libs/UPPayPluginEx.jar')
+    compile files('libs/wup_1.0.0.jar')
+    compile files('libs/xg_sdk_v2.38.jar')
+}

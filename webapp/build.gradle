@@ -1,0 +1,209 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+//        applicationId "com.pipaw.hwu.jzsc"
+        applicationId "com.pipaw.branch.webapp"
+//        applicationId "com.pipaw.chengshibaiye"
+//        applicationId "com.pipaw.tv.webapp"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 107
+        versionName "1.07s"
+    }
+    signingConfigs {
+        release {
+            storeFile file("..\\biggift.keystore")
+            storePassword "pipaw-biggift"
+            keyAlias "biggift.alias"
+            keyPassword "biggift"
+        }
+
+        buildTypes {
+            debug {
+                try {
+                    signingConfig signingConfigs.release
+                } catch (ex) {
+                }
+            }
+            release {
+                try {
+                    signingConfig signingConfigs.release
+                } catch (ex) {
+                }
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+                zipAlignEnabled true
+                minifyEnabled true
+            }
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = outputFile.name.replace(".apk", "-v" + defaultConfig.versionName + "-c" + defaultConfig.versionCode + ".apk")
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+    productFlavors {
+        open1074{
+            manifestPlaceholders = [CHANNEL_NAME: "open1074",
+                                    UMENG_APPKEY:"58f6b63d8630f57b1200283f"
+                ]
+        }
+        open1083lcfj{
+            manifestPlaceholders=[
+                    CHANNEL_NAME: "open1083lcfj",
+                    UMENG_APPKEY:"58fd91aa04e20594c80011d8"
+            ]
+            applicationId "com.pipaw.branch.webapp.lcfj"
+        }
+        jzsc_892{
+            manifestPlaceholders=[
+                    CHANNEL_NAME: "jzsc_892",
+                    UMENG_APPKEY:"58217fda4544cb6964002d36"
+            ]
+            applicationId "com.pipaw.hwu.jzsc"
+        }
+
+//        bd_market {
+//            manifestPlaceholders = [CHANNEL_NAME: "bd_market"]
+//        }
+//        _360_market {
+//            manifestPlaceholders = [CHANNEL_NAME: "_360_market"]
+//        }
+//        xm_market {
+//            manifestPlaceholders = [CHANNEL_NAME: "xm_market"]
+//        }
+//        qq_market{
+//            manifestPlaceholders = [CHANNEL_NAME: "qq_market"]
+//        }
+//
+//        shenm {
+//            manifestPlaceholders = [CHANNEL_NAME: "shenm"]
+//        }
+//        soug {
+//            manifestPlaceholders = [CHANNEL_NAME: "soug"]
+//        }
+//        baid {
+//            manifestPlaceholders = [CHANNEL_NAME: "baid"]
+//        }
+//
+//
+//        erhugame {
+//            manifestPlaceholders = [CHANNEL_NAME: "erhugame"]
+//        }
+//        huawei {
+//            manifestPlaceholders = [CHANNEL_NAME: "huawei"]
+//        }
+//        yingyongbao {
+//            manifestPlaceholders = [CHANNEL_NAME: "yingyongbao"]
+//        }
+//        umeng {
+//            manifestPlaceholders = [CHANNEL_NAME: "umeng"]
+//        }
+//        wandoujia {
+//            manifestPlaceholders = [CHANNEL_NAME: "wandoujia"]
+//        }
+//        appchina {
+//            manifestPlaceholders = [CHANNEL_NAME: "appchina"]
+//        }
+//        market360 {
+//            manifestPlaceholders = [CHANNEL_NAME: "360"]
+//        }
+//        baidu {
+//            manifestPlaceholders = [CHANNEL_NAME: "baidu"]
+//        }
+//        xiaomi {
+//            manifestPlaceholders = [CHANNEL_NAME: "xiaomi"]
+//        }
+//        gfan {
+//            manifestPlaceholders = [CHANNEL_NAME: "gfan"]
+//        }
+//        mumayi {
+//            manifestPlaceholders = [CHANNEL_NAME: "mumayi"]
+//        }
+//        Dashou_pipaw {
+//            manifestPlaceholders = [CHANNEL_NAME: "Dashou_pipaw"]
+//        }
+//        dashou_4q {
+//            manifestPlaceholders = [CHANNEL_NAME: "dashou_4q"]
+//        }
+//        dashou_4link {
+//            manifestPlaceholders = [CHANNEL_NAME: "dashou_4link"]
+//        }
+//        dashou_4tg {
+//            manifestPlaceholders = [CHANNEL_NAME: "dashou_4tg"]
+//        }
+//        dashou_lenovo {
+//            manifestPlaceholders = [CHANNEL_NAME: "dashou_lenovo"]
+//        }
+//        tonghuabin {
+//            manifestPlaceholders = [CHANNEL_NAME: "tonghuabin"]
+//        }
+//
+//
+//        baidu_s_one {
+//            manifestPlaceholders = [CHANNEL_NAME: "baidu_s_one"]
+//        }
+//        baidu_s_two {
+//            manifestPlaceholders = [CHANNEL_NAME: "baidu_s_two"]
+//        }
+//        baidu_s_three {
+//            manifestPlaceholders = [CHANNEL_NAME: "baidu_s_three"]
+//        }
+//        baidu_s_four {
+//            manifestPlaceholders = [CHANNEL_NAME: "baidu_s_four"]
+//        }
+//        baidu_s_five {
+//            manifestPlaceholders = [CHANNEL_NAME: "baidu_s_five"]
+//        }
+//        baidu_s_six {
+//            manifestPlaceholders = [CHANNEL_NAME: "baidu_s_six"]
+//        }
+//        baidu_s_seven {
+//            manifestPlaceholders = [CHANNEL_NAME: "baidu_s_seven"]
+//        }
+//        baidu_s_eight {
+//            manifestPlaceholders = [CHANNEL_NAME: "baidu_s_eight"]
+//        }
+//        baidu_s_nine {
+//            manifestPlaceholders = [CHANNEL_NAME: "baidu_s_nine"]
+//        }
+//        baidu_s_ten {
+//            manifestPlaceholders = [CHANNEL_NAME: "baidu_s_ten"]
+//        }
+//
+//        baidu_s_11 {
+//            manifestPlaceholders = [CHANNEL_NAME: "baidu_s_11"]
+//        }
+//        baidu_s_12 {
+//            manifestPlaceholders = [CHANNEL_NAME: "baidu_s_12"]
+//        }
+//        baidu_s_13 {
+//            manifestPlaceholders = [CHANNEL_NAME: "baidu_s_13"]
+//        }
+//        baidu_s_14 {
+//            manifestPlaceholders = [CHANNEL_NAME: "baidu_s_14"]
+//        }
+//        baidu_s_15 {
+//            manifestPlaceholders = [CHANNEL_NAME: "baidu_s_15"]
+//        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile 'com.umeng.analytics:analytics:6.0.4'
+    compile project(':juezhanlibrary')
+}
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}

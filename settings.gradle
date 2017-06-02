@@ -1,0 +1,1 @@
+include ':app', ':mylibrary', ':xwalk_core_library', ':zuixiyoulibrary', ':chuanqilibrary', ':alliancehordelibrary', ':webapp', ':juezhanlibrary', ':newwebapp', ':pipawPayWapLibrary26'

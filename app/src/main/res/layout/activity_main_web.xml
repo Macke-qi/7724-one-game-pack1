@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.pipaw.chuanqi.chuangqiapp.MainActivity">
+        <com.pipaw.chuanqi.chuangqiapp.ProgressBarView
+            android:id="@+id/home_progress"
+            android:layout_width="match_parent"
+            android:layout_height="2.0dip"
+            android:visibility="gone" />
+        <WebView
+            android:layout_below="@id/home_progress"
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></WebView>
+
+    </RelativeLayout>
+
+</LinearLayout>

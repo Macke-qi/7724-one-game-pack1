@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\ppw_disappear_to_left.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\anim\\ppw_disappear_to_left.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\ppw_appear_to_right.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\anim\\ppw_appear_to_right.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\ppw_appear_to_left.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\anim\\ppw_appear_to_left.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\ppw_circle_rotate.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\anim\\ppw_circle_rotate.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\ppw_disappear_to_right.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\anim\\ppw_disappear_to_right.xml"
+    }
+]

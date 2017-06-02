@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bind_tip"
+    android:layout_width="@dimen/user_width"
+    android:layout_height="267dip"
+    android:layout_centerInParent="true"
+    android:layout_margin="10dip"
+    android:background="@drawable/sdk_bg"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginTop="5dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/bt_back"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sdk_login_back_selector" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/pp_bind_account"
+            android:textColor="@color/text_title"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="26dip"
+        android:paddingRight="26dip" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dip"
+            android:background="@color/divider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dip"
+            android:lineSpacingExtra="7dip"
+            android:lineSpacingMultiplier="1"
+            android:text="@string/pp_bind_tip"
+            android:textColor="@color/text_gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal"
+        android:paddingLeft="18dip"
+        android:paddingRight="18dip" >
+
+        <Button
+            android:id="@+id/bt_enter_btn"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_marginRight="9dip"
+            android:layout_weight="1"
+            android:background="@drawable/sdk_btn_gray_selector"
+            android:text="@string/pp_bind_later"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_bind_btn"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="9dip"
+            android:layout_weight="1"
+            android:background="@drawable/sdk_btn_red_selector"
+            android:text="@string/pp_bind_immediately"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

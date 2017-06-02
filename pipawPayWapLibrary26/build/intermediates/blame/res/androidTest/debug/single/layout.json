@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_floating_icon.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_floating_icon.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_user_web.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_user_web.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_user.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_user.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_user_exit.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_user_exit.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_message.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_message.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_user_terms.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_user_terms.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_user_item.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_user_item.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_notice_item.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_notice_item.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_user_webview.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_user_webview.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_user_bt.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_user_bt.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_user_notice.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_user_notice.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_pay.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_pay.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_user_quick_rg.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_user_quick_rg.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_user_lg.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_user_lg.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_user_rg.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_user_rg.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_tab_item.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_tab_item.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_user_fp.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_user_fp.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pipaw_sdk_floating.xml",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\pipawPayWapLibrary26\\build\\intermediates\\bundles\\debug\\res\\layout\\pipaw_sdk_floating.xml"
+    }
+]

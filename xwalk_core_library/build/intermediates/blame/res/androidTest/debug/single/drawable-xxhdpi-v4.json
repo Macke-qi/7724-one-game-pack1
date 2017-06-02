@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\verify_checkmark.png",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\verify_checkmark.png"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\ic_search.png",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_search.png"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\ic_warning.png",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_warning.png"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\ic_menu_share_holo_light.png",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_menu_share_holo_light.png"
+    }
+]

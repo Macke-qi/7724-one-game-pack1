@@ -1,0 +1,664 @@
+apply plugin: 'com.android.application'
+//wrap with try and catch so the build is working even if the signing stuff is missing
+try {
+    apply from: '../../../signing.gradle'
+} catch (ex) {
+}
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.pipaw.hwu.jzsc"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 107
+        versionName "1.07"
+    }
+    signingConfigs {
+        release {
+            storeFile file("..\\biggift.keystore")
+            storePassword "pipaw-biggift"
+            keyAlias "biggift.alias"
+            keyPassword "biggift"
+        }
+
+        buildTypes {
+            debug {
+                try {
+                    signingConfig signingConfigs.release
+                } catch (ex) {
+                }
+            }
+            release {
+                try {
+                    signingConfig signingConfigs.release
+                } catch (ex) {
+                }
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+                zipAlignEnabled true
+                minifyEnabled true
+            }
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = outputFile.name.replace(".apk", "-v" + defaultConfig.versionName + "-c" + defaultConfig.versionCode + ".apk")
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+    productFlavors {
+
+        open1258 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1258.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1258",
+                    UMENG_APPKEY: "5930c784cae7e70ae100129d",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        open1259 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1259.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1259",
+                    UMENG_APPKEY: "5930c7a5f29d987522000e35",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        open1263 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1263.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1263",
+                    UMENG_APPKEY: "5930c7bd734be46917001a3e",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        open1265 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1265.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1265",
+                    UMENG_APPKEY: "5930c7d41c5dd0234d0003fc",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        open1266 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1266.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1266",
+                    UMENG_APPKEY: "5930c7ee07fe653ae80015f9",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        open1268 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1268.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1268",
+                    UMENG_APPKEY: "5930c804aed1796f20001d3a",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        open1269 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1269.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1269",
+                    UMENG_APPKEY: "5930c81882b63564e000070d",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        open1270 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1270.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1270",
+                    UMENG_APPKEY: "5930c82ba40fa35d0100016f",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+
+        open1271 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1271.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1271",
+                    UMENG_APPKEY: "5930c84c734be4588f000b94",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        open1272 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1272.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1272",
+                    UMENG_APPKEY: "5930c85c717c19759f001e16",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        /*open1189 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1189.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1189",
+                    UMENG_APPKEY: "592e63aae88bad214d001ef0",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        open1238 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://1238.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1238",
+                    UMENG_APPKEY: "592e63c245297d32500011f4",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        open1239 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1239.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1239",
+                    UMENG_APPKEY: "592e63d78630f529bf00049f",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        open1240 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1240.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1240",
+                    UMENG_APPKEY: "592e63efae1bf8513300060f",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        open1241 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1241.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1241",
+                    UMENG_APPKEY: "592e6568cae7e76bac001a8d",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        open1242 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1242.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1242",
+                    UMENG_APPKEY: "592e657e8630f55c340002df",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        open1243 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1243.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1243",
+                    UMENG_APPKEY: "592e6596c62dca65d7000252",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        open1244 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1244.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1244",
+                    UMENG_APPKEY: "592e65aa9f06fd6232000823",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        open1245 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1245.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1245",
+                    UMENG_APPKEY: "592e65bdb27b0a75e7000024",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        open1246 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1246.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1246",
+                    UMENG_APPKEY: "592e65d6c62dca65d700028c",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        open1247 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1247.open.7724.com/jstl/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1247",
+                    UMENG_APPKEY: "592e65eff29d98126500207a",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }*/
+
+        /*LY01A {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1193.open.7724.com/jstl/game?flag=open1193"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY01A",
+                    UMENG_APPKEY: "5927e50af5ade4397000054b",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        LY01B {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1194.open.7724.com/jstl/game?flag=open1194"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY01B",
+                    UMENG_APPKEY: "5927e51bf5ade4397c0006e5",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        LY01C {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1195.open.7724.com/jstl/game?flag=open1195"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY01C",
+                    UMENG_APPKEY: "5927e52bae1bf84c6c0005b3",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        LY01D {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1196.open.7724.com/jstl/game?flag=open1196"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY01D",
+                    UMENG_APPKEY: "5927e5393eae257d16000605",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        LY01E {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1197.open.7724.com/jstl/game?flag=open1197"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY01E",
+                    UMENG_APPKEY: "5927e54b04e2059fbb000736",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        LY01F {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1198.open.7724.com/jstl/game?flag=open1198"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY01F",
+                    UMENG_APPKEY: "5927e55f3eae257d3a000642",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        LY01G {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1199.open.7724.com/jstl/game?flag=open1199"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY01G",
+                    UMENG_APPKEY: "5927e5761c5dd057ee0006a5",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        LY01H {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1200.open.7724.com/jstl/game?flag=open1200"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY01H",
+                    UMENG_APPKEY: "5927e58445297d486100058c",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        LY01I {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1201.open.7724.com/jstl/game?flag=open1201"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY01I",
+                    UMENG_APPKEY: "5927e591677baa5c7d0005f8",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+
+        LY01J {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1202.open.7724.com/jstl/game?flag=open1202"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY01J",
+                    UMENG_APPKEY: "5927e59f734be475c100058d",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }*/
+        /*LY01 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1179.open.7724.com/jstl/game?flag=open1179"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY01",
+                    UMENG_APPKEY: "591d3e60cae7e703ea001533",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        LY02 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1180.open.7724.com/jstl/game?flag=open1180"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY02",
+                    UMENG_APPKEY: "591abceee88bad52a9000639",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        LY02A {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1203.open.7724.com/jstl/game?flag=open1203"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY02A",
+                    UMENG_APPKEY: "591abe489f06fd41ce0006e7",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        LY02B {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1204.open.7724.com/jstl/game?flag=open1204"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY02B",
+                    UMENG_APPKEY: "591abe5caed1793626000641",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        LY02C {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1205.open.7724.com/jstl/game?flag=open1205"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY02C",
+                    UMENG_APPKEY: "591abe6df5ade46bd4000663",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        LY02D {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1206.open.7724.com/jstl/game?flag=open1206"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY02D",
+                    UMENG_APPKEY: "591abe7d734be43c210004d2",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        LY02E {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1207.open.7724.com/jstl/game?flag=open1207"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY02E",
+                    UMENG_APPKEY: "591abe8d75ca350fb700043f",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        LY02F {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1208.open.7724.com/jstl/game?flag=open1208"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY02F",
+                    UMENG_APPKEY: "591abeb89f06fd41b900063c",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        LY02G {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1209.open.7724.com/jstl/game?flag=open1209"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY02G",
+                    UMENG_APPKEY: "591abec865b6d6787a0006a3",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        LY02H {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1210.open.7724.com/jstl/game?flag=open1210"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY02H",
+                    UMENG_APPKEY: "591abed7c62dca6166000643",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        LY02I {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1211.open.7724.com/jstl/game?flag=open1211"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY02I",
+                    UMENG_APPKEY: "591abeeb677baa2c5200064b",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        LY02J {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1222.open.7724.com/jstl/game?flag=open1222"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "LY02J",
+                    UMENG_APPKEY: "591ac0071c5dd013f8000594",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        JM001 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1181.open.7724.com/jstl/game?flag=open1181"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "JM001",
+                    UMENG_APPKEY: "591ac022f43e4818280008ca",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
+        JM1001
+                {
+                    resValue "string", "app_name", "绝世屠龙"
+                    buildConfigField("String", "URL", '"http://open1188.open.7724.com/jstl/game?flag=open1188"')
+                    manifestPlaceholders = [
+                            CHANNEL_NAME: "JM1001",
+                            UMENG_APPKEY: "591ac03a677baa2c0500077c",
+                            app_icon    : "@mipmap/ic_logo_jstl"
+                    ]
+                    applicationId "com.pipaw.webapp.big.jstl"
+                }
+        JM1001A
+                {
+                    resValue "string", "app_name", "绝世屠龙"
+                    buildConfigField("String", "URL", '"http://open1212.open.7724.com/jstl/game?flag=open1212"')
+                    manifestPlaceholders = [
+                            CHANNEL_NAME: "JM1001A",
+                            UMENG_APPKEY: "591ac04c2ae85b1b0e000741",
+                            app_icon    : "@mipmap/ic_logo_jstl"
+                    ]
+                    applicationId "com.pipaw.webapp.big.jstl"
+                }
+        JM1001B
+                {
+                    resValue "string", "app_name", "绝世屠龙"
+                    buildConfigField("String", "URL", '"http://open1213.open.7724.com/jstl/game?flag=open1213"')
+                    manifestPlaceholders = [
+                            CHANNEL_NAME: "JM1001B",
+                            UMENG_APPKEY: "591ac060f5ade46bd7000639",
+                            app_icon    : "@mipmap/ic_logo_jstl"
+                    ]
+                    applicationId "com.pipaw.webapp.big.jstl"
+                }
+        JM1001C
+                {
+                    resValue "string", "app_name", "绝世屠龙"
+                    buildConfigField("String", "URL", '"http://open1214.open.7724.com/jstl/game?flag=open1214"')
+                    manifestPlaceholders = [
+                            CHANNEL_NAME: "JM1001C",
+                            UMENG_APPKEY: "591ac07f45297d04bb000d12",
+                            app_icon    : "@mipmap/ic_logo_jstl"
+                    ]
+                    applicationId "com.pipaw.webapp.big.jstl"
+                }
+        JM1001D
+                {
+                    resValue "string", "app_name", "绝世屠龙"
+                    buildConfigField("String", "URL", '"http://open1215.open.7724.com/jstl/game?flag=open1215"')
+                    manifestPlaceholders = [
+                            CHANNEL_NAME: "JM1001D",
+                            UMENG_APPKEY: "591ac0a74544cb06f6000787",
+                            app_icon    : "@mipmap/ic_logo_jstl"
+                    ]
+                    applicationId "com.pipaw.webapp.big.jstl"
+                }
+        JM1001E
+                {
+                    resValue "string", "app_name", "绝世屠龙"
+                    buildConfigField("String", "URL", '"http://open1216.open.7724.com/jstl/game?flag=open1216"')
+                    manifestPlaceholders = [
+                            CHANNEL_NAME: "JM1001E",
+                            UMENG_APPKEY: "591ac0b8a325110171000712",
+                            app_icon    : "@mipmap/ic_logo_jstl"
+                    ]
+                    applicationId "com.pipaw.webapp.big.jstl"
+                }
+        JM1001F
+                {
+                    resValue "string", "app_name", "绝世屠龙"
+                    buildConfigField("String", "URL", '"http://open1217.open.7724.com/jstl/game?flag=open1217"')
+                    manifestPlaceholders = [
+                            CHANNEL_NAME: "JM1001F",
+                            UMENG_APPKEY: "591ac0ca734be43c0f0006c5",
+                            app_icon    : "@mipmap/ic_logo_jstl"
+                    ]
+                    applicationId "com.pipaw.webapp.big.jstl"
+                }
+        JM1001G
+                {
+                    resValue "string", "app_name", "绝世屠龙"
+                    buildConfigField("String", "URL", '"http://open1218.open.7724.com/jstl/game?flag=open1218"')
+                    manifestPlaceholders = [
+                            CHANNEL_NAME: "JM1001G",
+                            UMENG_APPKEY: "591ac0e0717c192aef00098a",
+                            app_icon    : "@mipmap/ic_logo_jstl"
+                    ]
+                    applicationId "com.pipaw.webapp.big.jstl"
+                }
+        JM1001H
+
+                {
+                    resValue "string", "app_name", "绝世屠龙"
+                    buildConfigField("String", "URL", '"http://open1219.open.7724.com/jstl/game?flag=open1219"')
+                    manifestPlaceholders = [
+                            CHANNEL_NAME: "JM1001H",
+                            UMENG_APPKEY: "591ac0f94544cb070b0003df",
+                            app_icon    : "@mipmap/ic_logo_jstl"
+                    ]
+                    applicationId "com.pipaw.webapp.big.jstl"
+                }
+        JM1001I
+
+                {
+                    resValue "string", "app_name", "绝世屠龙"
+                    buildConfigField("String", "URL", '"http://open1220.open.7724.com/jstl/game?flag=open1220"')
+                    manifestPlaceholders = [
+                            CHANNEL_NAME: "JM1001I",
+                            UMENG_APPKEY: "591ac10caed17936260006cc",
+                            app_icon    : "@mipmap/ic_logo_jstl"
+                    ]
+                    applicationId "com.pipaw.webapp.big.jstl"
+                }
+        JM1001J
+                {
+                    resValue "string", "app_name", "绝世屠龙"
+                    buildConfigField("String", "URL", '"http://open1221.open.7724.com/jstl/game?flag=open1221"')
+                    manifestPlaceholders = [
+                            CHANNEL_NAME: "JM1001J",
+                            UMENG_APPKEY: "591ac11f9f06fd41c300089a",
+                            app_icon    : "@mipmap/ic_logo_jstl"
+                    ]
+                    applicationId "com.pipaw.webapp.big.jstl"
+                }*/
+    }
+
+    android {
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile project(':xwalk_core_library')
+    compile 'com.umeng.analytics:analytics:6.0.4'
+    compile project(':mylibrary')
+}
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}

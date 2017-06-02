@@ -1,0 +1,162 @@
+apply plugin: 'com.android.application'
+//获取newwebapp.properties的内容
+//Properties properties = new Properties()
+//properties.load(project.rootProject.file('newwebapp/newwebapp.properties').newDataInputStream())
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.pipaw.webapp"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 108
+        versionName "1.08s"
+    }
+    signingConfigs {
+        release {
+            storeFile file("..\\biggift.keystore")
+            storePassword "pipaw-biggift"
+            keyAlias "biggift.alias"
+            keyPassword "biggift"
+        }
+
+        buildTypes {
+            debug {
+                try {
+                    signingConfig signingConfigs.release
+                } catch (ex) {
+                }
+            }
+            release {
+                try {
+                    signingConfig signingConfigs.release
+                } catch (ex) {
+                }
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+                zipAlignEnabled true
+                minifyEnabled true
+            }
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = outputFile.name.replace(".apk", "-v" + defaultConfig.versionName + "-c" + defaultConfig.versionCode + ".apk")
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+    productFlavors{
+        lysx01{
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open996.open.7724.com/lcfj/game"')
+            manifestPlaceholders=[
+                    CHANNEL_NAME:  "lysx01",
+                    UMENG_APPKEY: "59000ce599f0c748ac002929",
+                    app_icon   : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        lysx02{
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open997.open.7724.com/lcfj/game"')
+            manifestPlaceholders=[
+                    CHANNEL_NAME:  "lysx02",
+                    UMENG_APPKEY: "59000ccac895761f610024ad",
+                    app_icon   : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        lysx03{
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open820.open.7724.com/lcfj/game"')
+            manifestPlaceholders=[
+                    CHANNEL_NAME:  "lysx03",
+                    UMENG_APPKEY: "59000cb2f43e4803b1000127",
+                    app_icon   : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        lysx04{
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open411.open.7724.com/lcfj/game"')
+            manifestPlaceholders=[
+                    CHANNEL_NAME:  "lysx04",
+                    UMENG_APPKEY: "59000c99310c936849001fa7",
+                    app_icon   : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        lysx05{
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://sxyx1.open.7724.com/lcfj/game"')
+            manifestPlaceholders=[
+                    CHANNEL_NAME:  "lysx05",
+                    UMENG_APPKEY: "59000c841061d278fd001c74",
+                    app_icon   : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        lysx06{
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1052.open.7724.com/lcfj/game"')
+            manifestPlaceholders=[
+                    CHANNEL_NAME:  "lysx06",
+                    UMENG_APPKEY: "59000c608f4a9d558d002897",
+                    app_icon   : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        lysx07{
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1065.open.7724.com/lcfj/game"')
+            manifestPlaceholders=[
+                    CHANNEL_NAME:  "lysx07",
+                    UMENG_APPKEY: "59000c4604e205a0a60015e0",
+                    app_icon   : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        lysx08{
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1066.open.7724.com/lcfj/game"')
+            manifestPlaceholders=[
+                    CHANNEL_NAME:  "lysx08",
+                    UMENG_APPKEY: "59000c23e88bad0a05001b97",
+                    app_icon   : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        lysx09{
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1073.open.7724.com/lcfj/game"')
+            manifestPlaceholders=[
+                    CHANNEL_NAME:  "lysx09",
+                    UMENG_APPKEY: "59000c0c82b6357a5a0020bb",
+                    app_icon   : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        lysx10{
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1092.open.7724.com/lcfj/game"')
+            manifestPlaceholders=[
+                    CHANNEL_NAME:  "lysx10",
+                    UMENG_APPKEY: "59000bf11c5dd016bf002bcc",
+                    app_icon   : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.umeng.analytics:analytics:6.0.4'
+//    compile 'com.android.support:appcompat-v7:24.2.1'
+}
+

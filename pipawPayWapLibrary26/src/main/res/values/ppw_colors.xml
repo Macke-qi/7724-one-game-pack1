@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text_normal">#ff526374</color>
+    <color name="text_focused">#ffb3cee8</color>
+    <color name="text_web">#ff8a9199</color>
+    <color name="text_date">#ffa6a6a6</color>
+    <color name="text_content">#ff666666</color>
+
+    <color name="text_input">#ff9da4aa</color>
+    <color name="text_hint">#ff004d79</color>
+    <color name="text_title">#ff292c33</color>
+    <color name="text_red">#ffb33c44</color>
+    <color name="text_tip">#ffe03b33</color>
+    <color name="text_blue">#ff155dff</color>
+    <color name="text_gray">#ff515760</color>
+    <color name="divider">#ffd2d2d2</color>
+
+    <drawable name="sdk_back_bg_pressed">#ff222532</drawable>
+    <drawable name="sdk_exit_bg_pressed">#ff34394d</drawable>
+
+    <drawable name="sdk_username_bg_pressed">#fff4f4f4</drawable>
+    <drawable name="sdk_notice_bg_pressed">#ffebebeb</drawable>
+</resources>

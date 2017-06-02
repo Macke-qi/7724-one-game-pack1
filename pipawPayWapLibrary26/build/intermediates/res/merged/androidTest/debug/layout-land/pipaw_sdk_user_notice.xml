@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notice"
+    android:layout_width="@dimen/user_width"
+    android:layout_height="300dip"
+    android:layout_centerInParent="true"
+    android:layout_margin="10dip"
+    android:background="@drawable/sdk_bg_m"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dip"
+        android:layout_marginTop="5dip" >
+
+        <LinearLayout
+            android:id="@+id/notice_back"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sdk_login_back_selector" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/pp_notice"
+            android:textColor="@color/text_gray"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/notice_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="28dip"
+        android:layout_marginRight="28dip"
+        android:layout_marginTop="5dip"
+        android:layout_weight="1"
+        android:divider="@null" />
+
+    <ScrollView
+        android:id="@+id/notice_sv"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="18dip"
+        android:layout_marginRight="18dip"
+        android:layout_marginTop="5dip"
+        android:layout_weight="1"
+        android:background="@drawable/sdk_text_bg"
+        android:fillViewport="true"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/notice_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:textColor="@color/text_title"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/notice_content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notice_title_tv"
+                android:layout_margin="10dip"
+                android:textColor="@color/text_title"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/notice_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:text="@string/pp_loading"
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/notice_close_btn"
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/sdk_btn_red_selector"
+        android:text="@string/pp_close"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

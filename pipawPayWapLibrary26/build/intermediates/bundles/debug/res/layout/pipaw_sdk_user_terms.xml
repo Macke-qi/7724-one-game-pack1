@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/terms"
+    android:layout_width="match_parent"
+    android:layout_height="287dip"
+    android:layout_centerInParent="true"
+    android:layout_margin="10dip"
+    android:background="@drawable/sdk_bg_m"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dip"
+        android:layout_marginTop="5dip" >
+
+        <LinearLayout
+            android:id="@+id/terms_back"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sdk_login_back_selector" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/pp_terms_title"
+            android:textColor="@color/text_gray"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="18dip"
+        android:layout_marginRight="18dip"
+        android:layout_marginTop="5dip"
+        android:layout_weight="1"
+        android:background="@drawable/sdk_text_bg" >
+
+        <TextView
+            android:id="@+id/terms_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip"
+            android:textColor="@color/text_title"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal"
+        android:paddingLeft="18dip"
+        android:paddingRight="18dip" >
+
+        <Button
+            android:id="@+id/terms_disagree_btn"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_marginRight="9dip"
+            android:layout_weight="1"
+            android:background="@drawable/sdk_btn_blue_selector"
+            android:text="@string/pp_disagree"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/terms_agree_btn"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="9dip"
+            android:layout_weight="1"
+            android:background="@drawable/sdk_btn_red_selector"
+            android:text="@string/pp_agree"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

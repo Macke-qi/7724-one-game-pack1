@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alliancehordelibrary/alliancehordelibrary.iml" filepath="$PROJECT_DIR$/alliancehordelibrary/alliancehordelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chuanqilibrary/chuanqilibrary.iml" filepath="$PROJECT_DIR$/chuanqilibrary/chuanqilibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/juezhanlibrary/juezhanlibrary.iml" filepath="$PROJECT_DIR$/juezhanlibrary/juezhanlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newwebapp/newwebapp.iml" filepath="$PROJECT_DIR$/newwebapp/newwebapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pipawPayWapLibrary26/pipawPayWapLibrary26.iml" filepath="$PROJECT_DIR$/pipawPayWapLibrary26/pipawPayWapLibrary26.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webapp/webapp.iml" filepath="$PROJECT_DIR$/webapp/webapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xwalk_core_library/xwalk_core_library.iml" filepath="$PROJECT_DIR$/xwalk_core_library/xwalk_core_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuixiyoulibrary/zuixiyoulibrary.iml" filepath="$PROJECT_DIR$/zuixiyoulibrary/zuixiyoulibrary.iml" />
+    </modules>
+  </component>
+</project>
