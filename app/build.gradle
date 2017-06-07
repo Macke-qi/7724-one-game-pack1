@@ -52,8 +52,94 @@ android {
         }
     }
     productFlavors {
-
         open1258 {
+            resValue "string", "app_name", "决战沙城"
+            buildConfigField("String", "URL", '"http://open1258.open.7724.com/jzsc/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1258",
+                    UMENG_APPKEY: "59376c67734be44d940004b7",
+                    app_icon    : "@mipmap/ic_logo_jzsc"
+            ]
+            applicationId "com.pipaw.hwu.jzsc"
+        }
+
+        open1259 {
+            resValue "string", "app_name", "决战沙城"
+            buildConfigField("String", "URL", '"http://open1259.open.7724.com/jzsc/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1259",
+                    UMENG_APPKEY: "59376cd03eae256a5c0023e5",
+                    app_icon    : "@mipmap/ic_logo_jzsc"
+            ]
+            applicationId "com.pipaw.hwu.jzsc"
+        }
+
+        open1263 {
+            resValue "string", "app_name", "决战沙城"
+            buildConfigField("String", "URL", '"http://open1263.open.7724.com/jzsc/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1263",
+                    UMENG_APPKEY: "59376cedc8957660bb001efb",
+                    app_icon    : "@mipmap/ic_logo_jzsc"
+            ]
+            applicationId "com.pipaw.hwu.jzsc"
+        }
+
+        open1265 {
+            resValue "string", "app_name", "决战沙城"
+            buildConfigField("String", "URL", '"http://open1265.open.7724.com/jzsc/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1265",
+                    UMENG_APPKEY: "59376d154544cb12ba001d86",
+                    app_icon    : "@mipmap/ic_logo_jzsc"
+            ]
+            applicationId "com.pipaw.hwu.jzsc"
+        }
+
+        open1266 {
+            resValue "string", "app_name", "决战沙城"
+            buildConfigField("String", "URL", '"http://open1266.open.7724.com/jzsc/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1266",
+                    UMENG_APPKEY: "59376d3d4ad15644d7002735",
+                    app_icon    : "@mipmap/ic_logo_jzsc"
+            ]
+            applicationId "com.pipaw.hwu.jzsc"
+        }
+
+        open1268 {
+            resValue "string", "app_name", "决战沙城"
+            buildConfigField("String", "URL", '"http://open1268.open.7724.com/jzsc/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1268",
+                    UMENG_APPKEY: "59376d5104e205a7c1001df8",
+                    app_icon    : "@mipmap/ic_logo_jzsc"
+            ]
+            applicationId "com.pipaw.hwu.jzsc"
+        }
+
+        open1269 {
+            resValue "string", "app_name", "决战沙城"
+            buildConfigField("String", "URL", '"http://open1269.open.7724.com/jzsc/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1269",
+                    UMENG_APPKEY: "59376d657f2c740a4000036c",
+                    app_icon    : "@mipmap/ic_logo_jzsc"
+            ]
+            applicationId "com.pipaw.hwu.jzsc"
+        }
+
+        open1270 {
+            resValue "string", "app_name", "决战沙城"
+            buildConfigField("String", "URL", '"http://open1270.open.7724.com/jzsc/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1270",
+                    UMENG_APPKEY: "59376d78f43e48617d00122a",
+                    app_icon    : "@mipmap/ic_logo_jzsc"
+            ]
+            applicationId "com.pipaw.hwu.jzsc"
+        }
+        /*open1258 {
             resValue "string", "app_name", "绝世屠龙"
             buildConfigField("String", "URL", '"http://open1258.open.7724.com/jstl/game"')
             manifestPlaceholders = [
@@ -161,7 +247,7 @@ android {
                     app_icon    : "@mipmap/ic_logo_jstl"
             ]
             applicationId "com.pipaw.webapp.big.jstl"
-        }
+        }*/
         /*open1189 {
             resValue "string", "app_name", "绝世屠龙"
             buildConfigField("String", "URL", '"http://open1189.open.7724.com/jstl/game"')
