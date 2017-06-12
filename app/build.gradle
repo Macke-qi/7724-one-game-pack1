@@ -52,6 +52,16 @@ android {
         }
     }
     productFlavors {
+        open1202 {
+            resValue "string", "app_name", "绝世屠龙"
+            buildConfigField("String", "URL", '"http://open1202.open.7724.com/jstl/game?flag=open1202"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1202",
+                    UMENG_APPKEY: "593de9e06e27a43561002360",
+                    app_icon    : "@mipmap/ic_logo_jstl"
+            ]
+            applicationId "com.pipaw.webapp.big.jstl"
+        }
         open1258 {
             resValue "string", "app_name", "决战沙城"
             buildConfigField("String", "URL", '"http://open1258.open.7724.com/jzsc/game"')
