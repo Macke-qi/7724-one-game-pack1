@@ -52,7 +52,622 @@ android {
         }
     }
     productFlavors {
+
+        open1191 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1191.open.7724.com/lcfj/game?flag=open1191"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1191",
+                    UMENG_APPKEY: "59420998f5ade46454002165",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        open1258 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1258.open.7724.com/lcfj/game?flag=open1258"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1258",
+                    UMENG_APPKEY: "594209a4f29d982a56001c39",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        open1259 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1259.open.7724.com/lcfj/game?flag=open1259"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1259",
+                    UMENG_APPKEY: "594209b2734be423ad0004f9",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        open1263 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1263.open.7724.com/lcfj/game?flag=open1263"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1263",
+                    UMENG_APPKEY: "594209c065b6d674580011d3",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        open1265 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1265.open.7724.com/lcfj/game?flag=open1265"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1265",
+                    UMENG_APPKEY: "594209ce677baa723f001180",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        open1266 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1266.open.7724.com/lcfj/game?flag=open1266"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1266",
+                    UMENG_APPKEY: "594209db1061d24399000c78",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        open1268 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1268.open.7724.com/lcfj/game?flag=open1268"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1268",
+                    UMENG_APPKEY: "594209eaaed1794a6e001a1f",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        open1269 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1269.open.7724.com/lcfj/game?flag=open1269"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1269",
+                    UMENG_APPKEY: "594209f6677baa77b00022f0",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        open1270 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1270.open.7724.com/lcfj/game?flag=open1270"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1270",
+                    UMENG_APPKEY: "59420a05c895760a6d0011e9",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        open1271 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1271.open.7724.com/lcfj/game?flag=open1271"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1271",
+                    UMENG_APPKEY: "59420a14aed1796d15001295",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        open1272 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1272.open.7724.com/lcfj/game?flag=open1272"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1272",
+                    UMENG_APPKEY: "59420a2282b635141d0007f1",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        open1292 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1292.open.7724.com/lcfj/game?flag=open1292"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1292",
+                    UMENG_APPKEY: "59420a37717c190a46001293",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        /* open1189 {
+             resValue "string", "app_name", "龙城飞将"
+             buildConfigField("String", "URL", '"http://open1189.open.7724.com/lcfj/game?flag=open1189"')
+             manifestPlaceholders = [
+                     CHANNEL_NAME: "open1189",
+                     UMENG_APPKEY: "594208f882b6350b13001035",
+                     app_icon    : "@mipmap/ic_logo_lcfj"
+             ]
+             applicationId "com.pipaw.webapp.lcfj"
+         }
+
+         open1238 {
+             resValue "string", "app_name", "龙城飞将"
+             buildConfigField("String", "URL", '"http://1238.open.7724.com/lcfj/game?flag=1238"')
+             manifestPlaceholders = [
+                     CHANNEL_NAME: "open1238",
+                     UMENG_APPKEY: "59420908f43e48451400133d",
+                     app_icon    : "@mipmap/ic_logo_lcfj"
+             ]
+             applicationId "com.pipaw.webapp.lcfj"
+         }
+
+
+         open1239 {
+             resValue "string", "app_name", "龙城飞将"
+             buildConfigField("String", "URL", '"http://open1239.open.7724.com/lcfj/game?flag=open1239"')
+             manifestPlaceholders = [
+                     CHANNEL_NAME: "open1239",
+                     UMENG_APPKEY: "5942093a04e2054f25001033",
+                     app_icon    : "@mipmap/ic_logo_lcfj"
+             ]
+             applicationId "com.pipaw.webapp.lcfj"
+         }
+
+         open1240 {
+             resValue "string", "app_name", "龙城飞将"
+             buildConfigField("String", "URL", '"http://open1240.open.7724.com/lcfj/game?flag=open1240"')
+             manifestPlaceholders = [
+                     CHANNEL_NAME: "open1240",
+                     UMENG_APPKEY: "5942092a2ae85b26920015f6",
+                     app_icon    : "@mipmap/ic_logo_lcfj"
+             ]
+             applicationId "com.pipaw.webapp.lcfj"
+         }
+
+         open1241 {
+             resValue "string", "app_name", "龙城飞将"
+             buildConfigField("String", "URL", '"http://open1241.open.7724.com/lcfj/game?flag=open1241"')
+             manifestPlaceholders = [
+                     CHANNEL_NAME: "open1241",
+                     UMENG_APPKEY: "5942093a04e2054f25001033",
+                     app_icon    : "@mipmap/ic_logo_lcfj"
+             ]
+             applicationId "com.pipaw.webapp.lcfj"
+         }
+
+         open1242 {
+             resValue "string", "app_name", "龙城飞将"
+             buildConfigField("String", "URL", '"http://open1242.open.7724.com/lcfj/game?flag=open1242"')
+             manifestPlaceholders = [
+                     CHANNEL_NAME: "open1242",
+                     UMENG_APPKEY: "594209481061d22fc900031d",
+                     app_icon    : "@mipmap/ic_logo_lcfj"
+             ]
+             applicationId "com.pipaw.webapp.lcfj"
+         }
+
+         open1243 {
+             resValue "string", "app_name", "龙城飞将"
+             buildConfigField("String", "URL", '"http://open1243.open.7724.com/lcfj/game?flag=open1243"')
+             manifestPlaceholders = [
+                     CHANNEL_NAME: "open1243",
+                     UMENG_APPKEY: "59420955ae1bf840e40010b3",
+                     app_icon    : "@mipmap/ic_logo_lcfj"
+             ]
+             applicationId "com.pipaw.webapp.lcfj"
+         }
+
+
+         open1244 {
+             resValue "string", "app_name", "龙城飞将"
+             buildConfigField("String", "URL", '"http://open1244.open.7724.com/lcfj/game?flag=open1244"')
+             manifestPlaceholders = [
+                     CHANNEL_NAME: "open1244",
+                     UMENG_APPKEY: "59420963ae1bf840e40010bb",
+                     app_icon    : "@mipmap/ic_logo_lcfj"
+             ]
+             applicationId "com.pipaw.webapp.lcfj"
+         }
+
+         open1245 {
+             resValue "string", "app_name", "龙城飞将"
+             buildConfigField("String", "URL", '"http://open1245.open.7724.com/lcfj/game?flag=open1245"')
+             manifestPlaceholders = [
+                     CHANNEL_NAME: "open1245",
+                     UMENG_APPKEY: "5942097145297d6c47002120",
+                     app_icon    : "@mipmap/ic_logo_lcfj"
+             ]
+             applicationId "com.pipaw.webapp.lcfj"
+         }
+
+         open1246 {
+             resValue "string", "app_name", "龙城飞将"
+             buildConfigField("String", "URL", '"http://open1246.open.7724.com/lcfj/game?flag=open1246"')
+             manifestPlaceholders = [
+                     CHANNEL_NAME: "open1246",
+                     UMENG_APPKEY: "5942097d99f0c7702c00106d",
+                     app_icon    : "@mipmap/ic_logo_lcfj"
+             ]
+             applicationId "com.pipaw.webapp.lcfj"
+         }
+
+         open1247 {
+             resValue "string", "app_name", "龙城飞将"
+             buildConfigField("String", "URL", '"http://open1247.open.7724.com/lcfj/game?flag=open1247"')
+             manifestPlaceholders = [
+                     CHANNEL_NAME: "open1247",
+                     UMENG_APPKEY: "5942098a07fe651529001154",
+                     app_icon    : "@mipmap/ic_logo_lcfj"
+             ]
+             applicationId "com.pipaw.webapp.lcfj"
+         }*/
+        /*open1181 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1181.open.7724.com/lcfj/game?flag=open1181"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1181",
+                    UMENG_APPKEY: "5941fae475ca35182d001640",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        open1188 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1188.open.7724.com/lcfj/game?flag=open1188"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1188",
+                    UMENG_APPKEY: "594201ea45297d1ca3001d81",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1212 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1212.open.7724.com/lcfj/game?flag=open1212"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1212",
+                    UMENG_APPKEY: "594202052ae85b1660001cb1",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1213 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1213.open.7724.com/lcfj/game?flag=open1213"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1213",
+                    UMENG_APPKEY: "59420215a40fa327fa000ecd",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1214 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1214.open.7724.com/lcfj/game?flag=open1214"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1214",
+                    UMENG_APPKEY: "594202361061d27b48000f9a",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1215 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1215.open.7724.com/lcfj/game?flag=open1215"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1215",
+                    UMENG_APPKEY: "5942024699f0c72fa6000bf0",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1216 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1216.open.7724.com/lcfj/game?flag=open1216"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1216",
+                    UMENG_APPKEY: "59420259f5ade453db0008fe",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+
+        open1217 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1217.open.7724.com/lcfj/game?flag=open1217"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1217",
+                    UMENG_APPKEY: "59420270aed1794a6e0015c0",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1218 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1218.open.7724.com/lcfj/game?flag=open1218"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1218",
+                    UMENG_APPKEY: "59420285310c9345c600144a",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+
+        open1219 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1219.open.7724.com/lcfj/game?flag=open1219"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1219",
+                    UMENG_APPKEY: "594202a0f43e482d9a0005b5",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+
+        open1220 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1220.open.7724.com/lcfj/game?flag=open1220"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1220",
+                    UMENG_APPKEY: "594202d55312dd3f13000e6d",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1221 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1221.open.7724.com/lcfj/game?flag=open1221"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1221",
+                    UMENG_APPKEY: "594202e482b635249b000cc1",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }*/
+        /*open1180 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1180.open.7724.com/lcfj/game?flag=open1180"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1180",
+                    UMENG_APPKEY: "5941f8a375ca351ea900041c",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        open1203 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1203.open.7724.com/lcfj/game?flag=open1203"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1203",
+                    UMENG_APPKEY: "5941f8bdb27b0a2d0900150f",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1204 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1204.open.7724.com/lcfj/game?flag=open1204"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1204",
+                    UMENG_APPKEY: "5941f8d682b63572fd0014af",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1205 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1205.open.7724.com/lcfj/game?flag=open1205"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1205",
+                    UMENG_APPKEY: "5941f8eb766613266100050c",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1206 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1206.open.7724.com/lcfj/game?flag=open1206"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1206",
+                    UMENG_APPKEY: "5941f8fd5312dd09dc000678",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+
+        open1207 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1207.open.7724.com/lcfj/game?flag=open1207"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1207",
+                    UMENG_APPKEY: "5941f9138630f5547c000694",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1208 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1208.open.7724.com/lcfj/game?flag=open1208"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1208",
+                    UMENG_APPKEY: "5941f974a40fa358c5000332",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1209 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1209.open.7724.com/lcfj/game?flag=open1209"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1209",
+                    UMENG_APPKEY: "5941f992cae7e701c70003ad",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1210 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1210.open.7724.com/lcfj/game?flag=open1210"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1210",
+                    UMENG_APPKEY: "5941f9b12ae85b2692000b98",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1211 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1211.open.7724.com/lcfj/game?flag=open1211"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1211",
+                    UMENG_APPKEY: "5941f9c865b6d602e4000722",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+
+        open1222 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1222.open.7724.com/lcfj/game?flag=open1222"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1222",
+                    UMENG_APPKEY: "5941f9dd677baa3a1a0005f8",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }*/
+        /*open1179 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1179.open.7724.com/lcfj/game?flag=open1179"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1179",
+                    UMENG_APPKEY: "5941f72282b635435e0009b6",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        open1193 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1193.open.7724.com/lcfj/game?flag=open1193"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1193",
+                    UMENG_APPKEY: "5941f7374544cb407a001168",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1194 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1194.open.7724.com/lcfj/game?flag=open1194"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1194",
+                    UMENG_APPKEY: "5941f748f43e48451400076c",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1195 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1195.open.7724.com/lcfj/game?flag=open1195"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1195",
+                    UMENG_APPKEY: "5941f75b07fe654d0200054b",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1196 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1196.open.7724.com/lcfj/game?flag=open1196"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1196",
+                    UMENG_APPKEY: "5941f7805312dd3f1300079c",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        open1197 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1197.open.7724.com/lcfj/game?flag=open1197"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1197",
+                    UMENG_APPKEY: "5941f795310c934d15000131",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1198 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1198.open.7724.com/lcfj/game?flag=open1198"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1198",
+                    UMENG_APPKEY: "5941f7ad82b635435e000a31",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+        open1199 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1199.open.7724.com/lcfj/game?flag=open1199"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1199",
+                    UMENG_APPKEY: "5941f7d3c895766f70000270",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+
+        open1200 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1200.open.7724.com/lcfj/game?flag=open1200"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1200",
+                    UMENG_APPKEY: "5941f7eaf5ade418980017b5",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
+        open1201 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1201.open.7724.com/lcfj/game?flag=open1201"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1201",
+                    UMENG_APPKEY: "5941f8078630f5515d000115",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }
+
         open1202 {
+            resValue "string", "app_name", "龙城飞将"
+            buildConfigField("String", "URL", '"http://open1202.open.7724.com/lcfj/game?flag=open1202"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "open1202",
+                    UMENG_APPKEY: "5941f817a40fa37ac9001831",
+                    app_icon    : "@mipmap/ic_logo_lcfj"
+            ]
+            applicationId "com.pipaw.webapp.lcfj"
+        }*/
+        /*open1202 {
             resValue "string", "app_name", "绝世屠龙"
             buildConfigField("String", "URL", '"http://open1202.open.7724.com/jstl/game?flag=open1202"')
             manifestPlaceholders = [
@@ -148,7 +763,7 @@ android {
                     app_icon    : "@mipmap/ic_logo_jzsc"
             ]
             applicationId "com.pipaw.hwu.jzsc"
-        }
+        }*/
         /*open1258 {
             resValue "string", "app_name", "绝世屠龙"
             buildConfigField("String", "URL", '"http://open1258.open.7724.com/jstl/game"')
