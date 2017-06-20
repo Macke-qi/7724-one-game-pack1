@@ -1,15 +1,11 @@
 [
     {
-        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bubble_arrow_up.png",
-        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\bubble_arrow_up.png"
-    },
-    {
         "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\button_compat_shape.xml",
         "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\button_compat_shape.xml"
     },
     {
-        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\verify_checkmark.png",
-        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\verify_checkmark.png"
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bubble_arrow_up.png",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\bubble_arrow_up.png"
     },
     {
         "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\autofill_chip_inset.xml",
@@ -18,6 +14,10 @@
     {
         "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\color_picker_border.xml",
         "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\color_picker_border.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\verify_checkmark.png",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\verify_checkmark.png"
     },
     {
         "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\ic_search.png",
@@ -48,12 +48,12 @@
         "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\color_picker_advanced_select_handle.png"
     },
     {
-        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\dropdown_popup_background_down.9.png",
-        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\dropdown_popup_background_down.9.png"
-    },
-    {
         "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\dropdown_popup_background.xml",
         "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\dropdown_popup_background.xml"
+    },
+    {
+        "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\dropdown_popup_background_down.9.png",
+        "source": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\dropdown_popup_background_down.9.png"
     },
     {
         "merged": "F:\\pipawApp\\project\\chuangqi_2\\MyApplication\\xwalk_core_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\ondemand_overlay.9.png",
