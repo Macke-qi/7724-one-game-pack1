@@ -53,8 +53,27 @@ android {
     }
     productFlavors {
 
-
-        ryyyz_mz {
+        ryyyz2_mz {
+            resValue "string", "app_name", "荣耀与远征"
+            buildConfigField("String", "URL", '"http://www.7724.com/ryyyz/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "ryyyz2_mz",
+                    UMENG_APPKEY: "59420998f5ade46454002165",
+                    app_icon    : "@mipmap/ic_launcher_ryyyz"
+            ]
+            applicationId "com.pipaw.hwu.alliancehorde.mz"
+        }
+        ryyyz2 {
+            resValue "string", "app_name", "荣耀与远征"
+            buildConfigField("String", "URL", '"http://www.7724.com/ryyyz/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "ryyyz2",
+                    UMENG_APPKEY: "59420998f5ade46454002165",
+                    app_icon    : "@mipmap/ic_launcher_ryyyz"
+            ]
+            applicationId "com.pipaw.hwu.alliancehorde"
+        }
+        /*ryyyz_mz {
             resValue "string", "app_name", "联盟与部落"
             buildConfigField("String", "URL", '"http://www.7724.com/ryyyz/game"')
             manifestPlaceholders = [
@@ -73,7 +92,7 @@ android {
                     app_icon    : "@mipmap/ic_logo_alliancehorde"
             ]
             applicationId "com.pipaw.hwu.alliancehorde.mz"
-        }
+        }*/
        /* alliancehorde_mz {
             resValue "string", "app_name", "联盟与部落"
             buildConfigField("String", "URL", '"http://www.7724.com/lmybl/game"')
