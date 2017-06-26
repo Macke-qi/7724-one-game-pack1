@@ -54,8 +54,27 @@ android {
     productFlavors {
 
 
-
-        alliancehorde_mz {
+        ryyyz_mz {
+            resValue "string", "app_name", "联盟与部落"
+            buildConfigField("String", "URL", '"http://www.7724.com/ryyyz/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "ryyyz_mz",
+                    UMENG_APPKEY: "59420998f5ade46454002165",
+                    app_icon    : "@mipmap/ic_logo_alliancehorde"
+            ]
+            applicationId "com.pipaw.hwu.alliancehorde.mz"
+        }
+        ryyyz {
+            resValue "string", "app_name", "联盟与部落"
+            buildConfigField("String", "URL", '"http://www.7724.com/ryyyz/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "ryyyz",
+                    UMENG_APPKEY: "59420998f5ade46454002165",
+                    app_icon    : "@mipmap/ic_logo_alliancehorde"
+            ]
+            applicationId "com.pipaw.hwu.alliancehorde.mz"
+        }
+       /* alliancehorde_mz {
             resValue "string", "app_name", "联盟与部落"
             buildConfigField("String", "URL", '"http://www.7724.com/lmybl/game"')
             manifestPlaceholders = [
@@ -74,7 +93,7 @@ android {
                     app_icon    : "@mipmap/ic_logo_alliancehorde"
             ]
             applicationId "com.pipaw.hwu.alliancehorde"
-        }
+        }*/
        /* open1191 {
             resValue "string", "app_name", "龙城飞将"
             buildConfigField("String", "URL", '"http://open1191.open.7724.com/lcfj/game?flag=open1191"')
