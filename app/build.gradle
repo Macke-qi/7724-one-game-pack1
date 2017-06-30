@@ -63,7 +63,7 @@ android {
             ]
             applicationId "com.pipaw.hwu.alliancehorde.mz"
         }
-        ryyyz2 {
+        /*ryyyz2 {
             resValue "string", "app_name", "荣耀与远征"
             buildConfigField("String", "URL", '"http://www.7724.com/ryyyz/game"')
             manifestPlaceholders = [
@@ -72,7 +72,7 @@ android {
                     app_icon    : "@mipmap/ic_launcher_ryyyz"
             ]
             applicationId "com.pipaw.hwu.alliancehorde"
-        }
+        }*/
         /*ryyyz_mz {
             resValue "string", "app_name", "联盟与部落"
             buildConfigField("String", "URL", '"http://www.7724.com/ryyyz/game"')
