@@ -53,7 +53,17 @@ android {
     }
     productFlavors {
 
-        ryyyz2_mz {
+        dfh {
+            resValue "string", "app_name", "大富豪"
+            buildConfigField("String", "URL", '"http://open1338.open.7724.com/dfh3/game"')
+            manifestPlaceholders = [
+                    CHANNEL_NAME: "dfh",
+                    UMENG_APPKEY: "5955f728bbea831298000724",
+                    app_icon    : "@mipmap/ic_logo_dfh"
+            ]
+            applicationId "com.pipaw.hwu.dfh"
+        }
+        /*ryyyz2_mz {
             resValue "string", "app_name", "荣耀与远征"
             buildConfigField("String", "URL", '"http://www.7724.com/ryyyz/game"')
             manifestPlaceholders = [
@@ -63,7 +73,7 @@ android {
             ]
             applicationId "com.pipaw.hwu.alliancehorde.mz"
         }
-        /*ryyyz2 {
+        ryyyz2 {
             resValue "string", "app_name", "荣耀与远征"
             buildConfigField("String", "URL", '"http://www.7724.com/ryyyz/game"')
             manifestPlaceholders = [

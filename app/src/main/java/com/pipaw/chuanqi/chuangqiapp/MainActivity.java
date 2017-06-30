@@ -125,7 +125,7 @@ public class MainActivity extends Activity {
         if ((keyCode == KeyEvent.KEYCODE_BACK) && mXWalkView.getNavigationHistory().canGoBack()) {
             mXWalkView.getNavigationHistory().navigate(
                     XWalkNavigationHistory.Direction.BACKWARD, 1);
-            ; //goBack()表示返回WebView的上一页面
+            //goBack()表示返回WebView的上一页面
             return true;
         }
         if (keyCode == KeyEvent.KEYCODE_BACK) {
